@@ -2,6 +2,8 @@
 
   {{ range .Pages }}
       <a href="{{.Permalink}}">{{.Title}}</a>
+      <p>{{.WordCount}}</p>
   {{ end }}
+  {{partial "portfolio.html" . }}
 
 {{ end }}

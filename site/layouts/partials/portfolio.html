@@ -1,0 +1,8 @@
+<div>
+  portfolio html page
+  {{ range .Pages }}
+    <div>
+      <a href="{{.Permalink}}">{{.Title}}</a>
+    </div>
+  {{ end }}
+</div>

@@ -1,0 +1,15 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{ $.Site.Title }}</title>
+
+{{ $stylesheet := .Site.Data.webpack.main }}
+{{ with $stylesheet.css }}
+  <p class="teststyle">{{ $stylesheet.css }}</p>
+  <link href="{{ relURL . }}" rel="stylesheet">
+{{ end }}
+
+{{/*  {{ $icons := .Site.Data.webpack.main }}
+{{ with $icons.svg }}
+<p class="teststyle">{{ $icons.svg }}</p>
+<link href="{{ relURL . }}" rel="stylesheet">
+{{ end }}  */}}

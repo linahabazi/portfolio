@@ -28,6 +28,7 @@
     "@babel/preset-env": "^7.12.1",
     "@babel/register": "^7.12.1",
     "assets-webpack-plugin": "^3.9.7",
+    "autoprefixer": "^10.3.7",
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
@@ -46,8 +47,9 @@
     "npm-run-all": "^4.1.5",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "plugin-error": "^1.0.1",
+    "postcss": "^8.3.11",
     "postcss-import": "^12.0.1",
-    "postcss-loader": "^3.0.0",
+    "postcss-loader": "^4.0.3",
     "postcss-preset-env": "^6.7.0",
     "rimraf": "^3.0.0",
     "sass-loader": "^8.0.0",
@@ -62,5 +64,11 @@
   },
   "resolutions": {
     "natives": "1.1.6"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "bootstrap-icons": "^1.4.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
   }
 }

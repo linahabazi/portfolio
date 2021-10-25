@@ -15,6 +15,30 @@ module.exports = {
 
   module: {
     rules: [
+      // {
+      //   test: /\.scss$/,
+      //   use: [{
+      //     loader: 'style-loader', // inject CSS to page
+      //   }, {
+      //     loader: MiniCssExtractPlugin.loader,
+      //   },{
+      //     loader: 'css-loader', // translates CSS into CommonJS modules
+      //   }, {
+      //     loader: 'postcss-loader', // Run post css actions
+      //     options: {
+      //       postcssOptions: {
+      //         plugins: function () { // post css plugins, can be exported to postcss.config.js
+      //           return [
+      //             require('autoprefixer')
+      //           ];
+      //         }
+      //       }
+      //     }
+      //   }, {
+      //     loader: 'sass-loader' // compiles Sass to CSS
+      //   }]
+      // },
+
       {
         test: /\.((png)|(eot)|(woff)|(woff2)|(ttf)|(svg)|(gif))(\?v=\d+\.\d+\.\d+)?$/,
         loader: "file-loader?name=/[hash].[ext]"

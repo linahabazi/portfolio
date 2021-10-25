@@ -1,9 +1,6 @@
 {{ define "main" }}
-
-  {{ range .Pages }}
-      <a href="{{.Permalink}}">{{.Title}}</a>
-      <p>{{.WordCount}}</p>
-  {{ end }}
+  <p>main index</p>
+  <p>sidebar (responsive sliding menu)</p>
+  <p>portfolio grid (responsive tile arrangement)</p>
   {{partial "portfolio.html" . }}
-
 {{ end }}

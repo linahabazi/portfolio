@@ -4,12 +4,5 @@
 
 {{ $stylesheet := .Site.Data.webpack.main }}
 {{ with $stylesheet.css }}
-  <p class="teststyle">{{ $stylesheet.css }}</p>
   <link href="{{ relURL . }}" rel="stylesheet">
 {{ end }}
-
-{{/*  {{ $icons := .Site.Data.webpack.main }}
-{{ with $icons.svg }}
-<p class="teststyle">{{ $icons.svg }}</p>
-<link href="{{ relURL . }}" rel="stylesheet">
-{{ end }}  */}}

@@ -84,9 +84,22 @@ body {
   padding: 3rem 1.5rem;
 }
 
-// Style Bootstrap icons
-.bi {
-  fill: currentColor;
+// // Style Bootstrap icons
+// .bi {
+//   fill: currentColor;
+// }
+
+.page-content {
+  display: flex;
+  flex-direction: row;
+
+}
+.row-offcanvas{}
+.row-offcanvas-left{}
+
+.artistbio {
+  background-color: red;
+  max-width: 500px;
 }
 
 .teststyle {

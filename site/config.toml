@@ -7,3 +7,21 @@ title = "Lina's Portfolio"
 # See configuration options for more details: 
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+[params]
+  mainSections = ["portfolio"]
+  test = true
+
+  # Nav links in the side bar
+  [[params.navlinks]]
+  name = "Home"
+  url = "portfolio/"
+  home = true
+
+  [[params.navlinks]]
+  name = "About"
+  url = "about/"
+
+  [[params.navlinks]]
+  name = "Get in touch"
+  url = "contact/"

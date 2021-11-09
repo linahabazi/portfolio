@@ -7,10 +7,15 @@
 
 <body>
   {{/*  {{ block "header" . }}{{ partial "header" . }}{{end}}  */}}
-  <div class="container-fluid">
-    <div class="row row-offcanvas row-offcanvas-left">
-      {{ partial "sidebar" }}
-      {{ block "main" . }}{{end}}
+
+  <div class="container-fluid h-100">
+    <div class="row row-offcanvas row-offcanvas-left h-100">
+      <nav class="sidebar col-3 p-3 bg-dark position-fixed h-100">
+        {{ partial "sidebar" }}
+      </nav>
+      <div class="content col offset-3 p-3 bg-success">
+        {{ block "main" . }}{{end}}
+      </div>
     </div>
   </div>
 

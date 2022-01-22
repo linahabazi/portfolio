@@ -1,40 +1,18 @@
-<div class="portfolioContent bg-warning">
+<div class="portfolioContent">
   {{ range .Pages }}
-    <div>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br><a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br><a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br><a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br><a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br><a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br><a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
-      <a href="{{.Permalink}}">{{.Title}}</a><br>
+  {{ $artworkData := index (index .Site.Data.content.artwork .Params.seriesId) .Params.artworkId }}
+
+    <div class="work">
+      <a href="{{.Permalink}}"><div class="image">{{index $artworkData.image}}</div></a>
+      <div class="label">
+        <div>{{ index $artworkData.title }}</div>
+        <div>{{ index $artworkData.dimensions }}</div>
+        <div>{{ index $artworkData.year }}</div>
+        {{/*  <div class="titleYear">title, year</div>
+        <div class="dimensions">10" x 10"</div>
+        <div class="year">2021</div>  */}}
+      </div>
     </div>
+    
   {{end}}
 </div>

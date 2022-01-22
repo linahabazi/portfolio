@@ -1,0 +1,48 @@
+---
+images:
+  logo: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
+  favicon: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
+  aboutProfile: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
+artwork:
+  silkscreen:
+    seriesTitle: Silkscreen Prints 2018-2020
+    medium: Silkscreen
+    tags: [printmaking, silkscreen]
+    womansVoice:
+      title: A Woman's Voice is a Revolution
+      year: 2018
+      dimensions: 11" x 17"
+      image: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
+      imageId: womansVoice
+      tags: [arabic]
+    mintTea:
+      title: Mint Tea
+      year: 2020
+      dimensions: 5" x 7"
+      image: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
+      imageId: mintTea
+      tags: [arabic]
+  asymmetry:
+    seriesTitle: >
+      Asymmetry: Xerographic Collages
+    medium: Silkscreen
+    tags: [printmaking, silkscreen, xerography, xerox art, scanner art, palestine]
+    failedClone:
+      title: Failed Clone
+      year: 2021
+      dimensions: 20" x 26"
+      image: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
+      imageId: failedClone
+    orphanChild:
+      title: Orphan Child
+      year: 2021
+      dimensions: 20" x 26"
+      image: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
+      imageId: orphanChild
+    opposingForces:
+      title: Opposing Forces
+      year: 2021
+      dimensions: 20" x 26"
+      image: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
+      imageId: opposingForces
+...

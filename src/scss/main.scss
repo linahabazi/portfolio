@@ -78,8 +78,13 @@ $success: #7952b3;
 // Custom styles
 //
 
-@import "icon-list";
+@import "portfolio";
+@import "about";
 
 html,body {
   height: 100%;
+}
+
+.pageTitle {
+  font-style: italic;
 }

@@ -1,4 +1,7 @@
 <div>
-  single work page
-  {{.Content}}
+  {{ $seriesData := index .Site.Data.content.artwork .Params.seriesId }}
+  {{ $artworkData := index $seriesData .Params.artworkId }}
+    
+  <img class="image" src="{{$artworkData.image}}" />
+  <div>{{.Content}}</div>
 </div>

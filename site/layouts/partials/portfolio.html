@@ -1,18 +1,16 @@
 <div class="portfolioContent">
   {{ range .Pages }}
-  {{ $artworkData := index (index .Site.Data.content.artwork .Params.seriesId) .Params.artworkId }}
+  {{ $seriesData := index .Site.Data.content.artwork .Params.seriesId }}
+  {{ $artworkData := index $seriesData .Params.artworkId }}
 
     <div class="work">
-      <a href="{{.Permalink}}"><div class="image">{{index $artworkData.image}}</div></a>
+      <a href="{{.Permalink}}"><img class="image" src="{{$artworkData.image}}" /></a>
       <div class="label">
-        <div>{{ index $artworkData.title }}</div>
-        <div>{{ index $artworkData.dimensions }}</div>
-        <div>{{ index $artworkData.year }}</div>
-        {{/*  <div class="titleYear">title, year</div>
-        <div class="dimensions">10" x 10"</div>
-        <div class="year">2021</div>  */}}
+        <div>{{ $artworkData.title  }}, {{ $artworkData.year }}</div>
+        <div>{{ $artworkData.dimensions }}</div>
+        <div>{{ $seriesData.medium }}</div>
       </div>
     </div>
-    
+
   {{end}}
 </div>

@@ -1,8 +1,10 @@
-<head>
-  {{ range .Site.Params.navlinks }}
-    {{ if .home }}
-      <meta http-equiv="refresh" content="0; URL={{ .url | absURL }}" />
-      <meta name="robots" content="noindex" />
-    {{ end }}
-  {{ end }}
-</head>
+{{ define "main" }}
+{{ $profileImagePath := index .Site.Data.content.images .Params.imageId }}
+
+<div>
+    <img src="{{ $profileImagePath }}" />
+    <h1>Kuffiyehscope</h1>
+    <p>Lina Habazi, 2021</p>
+</div>
+
+{{ end }}

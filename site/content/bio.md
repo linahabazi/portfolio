@@ -1,10 +1,10 @@
 ---
-title: 'About Me!!!!'
+title: 'Bio'
 date: 2018-11-14T19:02:50-07:00
 draft: false
 imageId: aboutProfile
-type: 'about'
-layout: "about"
+type: 'bio'
+layout: "bio"
 ---
 
 artist bio paragraph

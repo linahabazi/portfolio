@@ -2,8 +2,8 @@
 {{ define "main" }}
 {{ $profileImagePath := index .Site.Data.content.images .Params.imageId }}
 
-  <div class="about">
-    {{/*  <div class="title">about me!</h1>  */}}
+  <div class="bio">
+    {{/*  <div class="title">Bio</h1>  */}}
     <div class="artistBio">
           <img src="{{ $profileImagePath }}" />
       {{ .Content }}

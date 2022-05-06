@@ -14,13 +14,16 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
   # Nav links in the side bar
   [[params.navlinks]]
-  name = "Home"
+  name = "Portfolio"
   url = "portfolio/"
-  home = true
 
   [[params.navlinks]]
-  name = "About"
-  url = "about/"
+  name = "Bio"
+  url = "bio/"
+
+  [[params.navlinks]]
+  name = "CV"
+  url = "cv/"
 
   [[params.navlinks]]
   name = "Get in touch"

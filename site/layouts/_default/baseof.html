@@ -10,15 +10,25 @@
 
   <div class="container-fluid h-100">
     <div class="row row-offcanvas row-offcanvas-left h-100">
-      <nav class="sidebar col-3 p-5 position-fixed h-100">
-        {{ partial "sidebar" }}
-      </nav>
-      <div class="content col offset-3 p-5">
-        {{ if ne .Title "Portfolios"}}
-            <div class="pageTitle">{{.Title}}</div>
-        {{ end }}
-        {{ block "main" . }}{{end}}
-      </div>
+      {{ if eq .Title "Home" }}
+        <div class="heroArt col-5 p-5 h-100">
+          {{ block "main" . }}{{end}}
+        </div>
+        <nav class="sidebar col-3 p-5 h-100">
+          {{ partial "sidebar" }}
+        </nav>
+      {{ else }}
+        <nav class="sidebar col-3 p-5 position-fixed h-100">
+          {{ partial "sidebar" }}
+        </nav>
+        <div class="content col offset-3 p-5">
+          {{ if ne .Title "Portfolios"}}
+              <div class="pageTitle">{{.Title}}</div>
+          {{ end }}
+          {{ block "main" . }}{{end}}
+        </div>
+      {{ end }}
+
     </div>
   </div>
 

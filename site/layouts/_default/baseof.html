@@ -15,11 +15,11 @@
           {{ block "main" . }}{{end}}
         </div>
         <nav class="sidebar col-3 p-5 h-100">
-          {{ partial "sidebar" }}
+          {{ partial "sidebar" . }}
         </nav>
       {{ else }}
         <nav class="sidebar col-3 p-5 position-fixed h-100">
-          {{ partial "sidebar" }}
+          {{ partial "sidebar" . }}
         </nav>
         <div class="content col offset-3 p-5">
           {{ if ne .Title "Portfolios"}}

@@ -1,9 +1,8 @@
 <div class="sidebarContent">
-  <div class="title">Lina Habazi</div>
+  <div class="title"><a href="/">Lina Habazi</a></div>
   <div class="nav">
-    <div class="navLink"><a href="/bio">Bio</a></div>
-    <div class="navLink"><a href="/cv">CV</a></div>
-    <div class="navLink"><a href="/contact">Contact</a></div>
-    <div class="navLink"><a href="/portfolio">Portfolio</a></div>
+    {{ range .Site.Params.navlinks}}
+      <div class="navLink"><a href={{.url}}>{{.name}}</a></div>
+    {{ end }}
   </div>
 </div>

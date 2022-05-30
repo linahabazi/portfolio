@@ -2,6 +2,7 @@ baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
 title = "Lina's Portfolio"
+pluralizelisttitles = false
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
@@ -13,9 +14,6 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
   test = true
 
   # Nav links in the side bar
-  [[params.navlinks]]
-  name = "Portfolio"
-  url = "portfolio/"
 
   [[params.navlinks]]
   name = "Bio"
@@ -26,5 +24,17 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
   url = "cv/"
 
   [[params.navlinks]]
-  name = "Get in touch"
+  name = "Contact"
   url = "contact/"
+
+  [[params.navlinks]]
+  name = "Portfolio"
+  url = "portfolio/"
+
+  [[params.sociallinks]]
+  name = "Instagram"
+  url = "instagram.com"
+
+  [[params.sociallinks]]
+  name = "Twitter"
+  url = "twitter.com"

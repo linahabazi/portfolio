@@ -1,8 +1,29 @@
+{{ $heroData := "" }}
+{{ with .Site.GetPage "/" }}
+  {{ $heroData = index .Site.Data.content.artwork .Params.seriesId .Params.artworkId }}
+{{ end }}
+
 <div class="sidebarContent">
-  <div class="title"><a href="/">Lina Habazi</a></div>
-  <div class="nav">
-    {{ range .Site.Params.navlinks}}
-      <div class="navLink"><a href={{.url}}>{{.name}}</a></div>
-    {{ end }}
+  {{ $title := .Title }}
+  {{ if ne $title "HomeIndex" }}
+    <div class="accentImage">
+      <img src="{{ $heroData.image }}" />
+    </div>
+  {{ end }}
+  <div class="sidebarLinks pl-4 pb-10 my-auto">
+    {{ $homeIndex := "HomeIndex" }}
+    <div class="title pb-1 {{ if eq $homeIndex $title }}active{{ end }}">
+      <a href="/">Lina<br>Habazi</a>
+    </div>
+    <div class="nav pb-1">
+      {{ range .Site.Params.navlinks}}
+        <div class="navLink pt-1 {{ if eq .name $title }}active{{ end }}"><a href={{.url}}>{{.name}}</a></div>
+      {{ end }}
+    </div>
+    <div class="socialIcons pt-5">
+      {{ range .Site.Params.sociallinks}}
+        <div class="socialIcon pt-1"><a href={{.url}}>{{.name}}</a></div>
+      {{ end }}
+    </div>
   </div>
 </div>

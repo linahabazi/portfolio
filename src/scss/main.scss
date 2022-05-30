@@ -36,6 +36,14 @@ $success: #7952b3;
 
 @import "~bootstrap/scss/functions"; // Required
 @import "~bootstrap/scss/variables"; // Required
+
+$spacer: 0.5rem;
+@for $i from 0 through 50 {
+  $spacers: map-merge($spacers, (
+  $i: ($i * $spacer)
+  ));
+}
+
 @import "~bootstrap/scss/mixins"; // Required
 
 @import "~bootstrap/scss/root"; // Required
@@ -78,13 +86,36 @@ $success: #7952b3;
 // Custom styles
 //
 
+$dark-blue-grey: #36363a;
+$mid-blue-grey: #73737f;
+$warm-off-white: #fffef9;
+$raspberry-accent: #d01941;
+$deep-raspberry-accent: #a31332;
+
 @import "portfolio";
 @import "bio";
+@import "hero";
+@import "sidebar";
 
 html,body {
   height: 100%;
+  background-color: $warm-off-white;
+}
+
+img {
+  max-width: 100%;
 }
 
 .pageTitle {
   font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-blue-grey;
+  transition: 0.2s;
+}
+a:hover {
+  text-decoration: none;
+  color: $raspberry-accent;
 }

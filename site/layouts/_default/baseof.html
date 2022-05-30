@@ -6,30 +6,32 @@
 </head>
 
 <body>
-  {{/*  {{ block "header" . }}{{ partial "header" . }}{{end}}  */}}
-
-  <div class="container-fluid h-100">
-    <div class="row row-offcanvas row-offcanvas-left h-100">
-      {{ if eq .Title "HomeIndex" }}
-        <div class="heroArt col-5 p-5 h-100">
-          {{ block "main" . }}{{end}}
-        </div>
-        <nav class="sidebar col-3 p-5 h-100">
-          {{ partial "sidebar" . }}
-        </nav>
-      {{ else }}
-        <nav class="sidebar col-3 p-5 position-fixed h-100">
-          {{ partial "sidebar" . }}
-        </nav>
-        <div class="content col offset-3 p-5">
-          {{ if ne .Title "Portfolios"}}
-              <div class="pageTitle">{{.Title}}</div>
-          {{ end }}
-          {{ block "main" . }}{{end}}
-        </div>
-      {{ end }}
+  <main>
+    <div class="container-fluid h-100">
+      <div class="row row-offcanvas row-offcanvas-left h-100">
+        {{ if eq .Title "HomeIndex" }}
+          <div class="content col-1 col-sm-6 p-0 h-100">
+            {{ block "main" . }}{{end}}
+          </div>
+          <nav class="sidebar p-0 col-11 col-sm-6 my-auto h-100">
+            <!-- pb-10 my-auto -->
+            {{ partial "sidebar" . }}
+          </nav>
+        {{ else }}
+          <nav class="sidebar col-4 p-0 position-fixed h-100">
+            {{ partial "sidebar" . }}
+          </nav>
+          <div class="content col offset-4 p-5 pr-15">
+            {{ if ne .Title "Portfolio"}}
+                <div class="pageTitle">{{.Title}}</div>
+            {{ end }}
+            {{ block "main" . }}{{end}}
+          </div>
+        {{ end }}
+      </div>
     </div>
-  </div>
+  </main>
+
 
   {{/*  {{ block "footer" . }}{{ partial "footer" . }}{{end}}  */}}
 

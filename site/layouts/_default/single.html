@@ -1,3 +1,7 @@
 {{ define "main" }}
-{{ partial "work.html" . }}
+    {{ if in .Page "portfolio" }}
+        {{ partial "work.html" . }}
+    {{ else if in .Page "reading" }}
+    {{ else if in .Page "codeArt" }}
+    {{ end }}
 {{ end }}

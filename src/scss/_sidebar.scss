@@ -23,7 +23,7 @@
             }
         }
         .nav {
-            font-size: 18px;
+            font-size: 16px;
             .navLink {
     
             }
@@ -39,10 +39,10 @@
         }
         .title.active, .navLink.active {
             a {
-                color: $deep-raspberry-accent;
+                color: $dark-accent;
             }
             a:hover {
-                color: $raspberry-accent;
+                color: $accent;
             }
         }
     }

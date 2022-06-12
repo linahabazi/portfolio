@@ -5,6 +5,7 @@
   <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
 </head>
 
+
 <body>
   <main>
     <div class="container-fluid h-100">
@@ -22,8 +23,13 @@
             {{ partial "sidebar" . }}
           </nav>
           <div class="content col offset-4 p-5 pr-15">
-            {{ if ne .Title "Portfolio"}}
-                <div class="pageTitle">{{.Title}}</div>
+            {{ $title := lower .Title }}
+            {{ range .Site.Params.navlinks }}
+              {{ if eq .name $title }}
+                {{ if ne $title "portfolio" }}
+                  <div class="pageTitle">{{.displayName}}</div>
+                {{ end }}
+              {{ end }}
             {{ end }}
             {{ block "main" . }}{{end}}
           </div>

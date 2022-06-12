@@ -89,8 +89,14 @@ $spacer: 0.5rem;
 $dark-blue-grey: #36363a;
 $mid-blue-grey: #73737f;
 $warm-off-white: #fffef9;
-$raspberry-accent: #d01941;
-$deep-raspberry-accent: #a31332;
+
+// turquoise accent
+$accent: #19d0b2;
+$dark-accent: #13a38b;
+
+// raspberry accent
+// $accent: #d01941;
+// $dark-accent: #a31332;
 
 @import "portfolio";
 @import "bio";
@@ -117,5 +123,5 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: $raspberry-accent;
+  color: $accent;
 }

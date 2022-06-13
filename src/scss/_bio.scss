@@ -1,8 +1,21 @@
 .bio {
-  .profileImage{
-    margin: 30px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  align-items: center;
+  
+  .profileImage {
+    height: 100%;
+    img {
+      width: 250px;
+    }
   }
+
   .bioText{
-    margin: 60px;
+    max-width: 420px;
+    min-width: 300px;
+    text-align: justify;
+
   }
 }

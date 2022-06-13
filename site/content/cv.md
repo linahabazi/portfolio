@@ -7,6 +7,9 @@ type: 'cv'
 layout: 'cv'
 ---
 
+## CV
+&nbsp;
+
 ###### EDUCATION
 
 **2020** B.S. Computer Science, Studio Art Minor, University of Houston, Houston, TX  

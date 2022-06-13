@@ -23,14 +23,6 @@
             {{ partial "sidebar" . }}
           </nav>
           <div class="content col offset-4 p-5 pr-15">
-            {{ $title := lower .Title }}
-            {{ range .Site.Params.navlinks }}
-              {{ if eq .name $title }}
-                {{ if ne $title "portfolio" }}
-                  <div class="pageTitle">{{.displayName}}</div>
-                {{ end }}
-              {{ end }}
-            {{ end }}
             {{ block "main" . }}{{end}}
           </div>
         {{ end }}

@@ -16,6 +16,11 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
   # Nav links in the side bar
 
   [[params.navlinks]]
+  name = "portfolio"
+  displayName = "Portfolio"
+  url = "portfolio/"
+
+  [[params.navlinks]]
   name = "bio"
   displayName = "Bio"
   url = "bio/"
@@ -31,19 +36,16 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
   url = "contact/"
 
   [[params.navlinks]]
-  name = "portfolio"
-  displayName = "Portfolio"
-  url = "portfolio/"
-
-  [[params.navlinks]]
   name = "code-art"
   displayName = "Code Art"
   url = "code-art/"
+  draft = true
 
   [[params.navlinks]]
   name = "reading"
   displayName = "Reading"
   url = "reading/"
+  draft = true
 
   [[params.sociallinks]]
   name = "Instagram"

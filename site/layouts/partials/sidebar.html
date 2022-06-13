@@ -10,14 +10,16 @@
       <img src="{{ $heroData.image }}" />
     </div>
   {{ end }}
-  <div class="sidebarLinks pl-4 pb-10 my-auto">
+  <div class="sidebarLinks ml-3 pl-4 pb-10 my-auto">
     {{ $homeIndex := "homeindex" }}
-    <div class="title pb-1 {{ if eq $homeIndex $title }}active{{ end }}">
+    <div class="title pb-4 {{ if eq $homeIndex $title }}active{{ end }}">
       <a href="/">Lina<br>Habazi</a>
     </div>
     <div class="nav pb-1">
       {{ range .Site.Params.navlinks}}
-        <div class="navLink pt-1 {{ if eq .name $title }}active{{ end }}"><a href={{.url}}>{{.displayName}}</a></div>
+        {{ if ne .draft true }}
+          <div class="navLink pt-1 {{ if eq .name $title }}active{{ end }}"><a href={{.url}}>{{.displayName}}</a></div>
+        {{ end }}
       {{ end }}
     </div>
     <div class="socialIcons pt-5">

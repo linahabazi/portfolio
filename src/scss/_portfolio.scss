@@ -1,6 +1,9 @@
 .portfolioContent {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
   .work{
-    margin: 30px;
     .image{
       height: 400px;
       width: 600px;

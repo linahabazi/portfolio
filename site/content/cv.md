@@ -18,7 +18,7 @@ layout: 'cv'
 **2022** The Other Side, Winter Street Studios, Houston, TX  
 **2021** In the Sun, Station Museum of Contemporary Art, Houston, TX  
 **2021** Red Bull Arts Detroit Art Mile Virtual Exhibit, Curated by Maamoul Press  
-**2019-2021** The Nook Cafe Art Display, Houston, TX
+**2019 - 2021** The Nook Cafe Art Display, Houston, TX
 
 ##### PUBLICATIONS
 

@@ -6,5 +6,3 @@ image: 'image url'
 type: 'contact'
 layout: 'contact'
 ---
-
-contactttt

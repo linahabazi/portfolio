@@ -22,16 +22,13 @@
           <nav class="sidebar col-4 p-0 position-fixed h-100">
             {{ partial "sidebar" . }}
           </nav>
-          <div class="content col offset-4 p-5 pr-15">
+          <div class="content col offset-4 p-5 pt-15 pr-15">
             {{ block "main" . }}{{end}}
           </div>
         {{ end }}
       </div>
     </div>
   </main>
-
-
-  {{/*  {{ block "footer" . }}{{ partial "footer" . }}{{end}}  */}}
 
   {{ partial "scripts.html" . }}
 </body>

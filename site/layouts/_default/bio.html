@@ -2,11 +2,16 @@
 {{ define "main" }}
 {{ $profileImagePath := index .Site.Data.content.images .Params.imageId }}
 
-  <div class="bio mt-15">
-    <div class="profileImage">
-      <img src="{{ $profileImagePath }}" />
+  <div class="bio-container">
+    <div class="bio mt-15">
+      <div class="profileImage">
+        <img src="{{ $profileImagePath }}" />
+      </div>
+      <div class="bioText">{{ .Content }}</div>
     </div>
-    <div class="bioText">{{ .Content }}</div>
+    <p class="mt-10">
+      <span class="font-weight-bold font-italic">For the nerds:</span> I coded this website myself in Hugo, a static website engine, with Bootstrap v4.6. You can view my code on GitHub.
+    </p>
   </div>
 
 {{ end }}

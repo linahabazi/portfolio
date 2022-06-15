@@ -1,21 +1,26 @@
-.bio {
+.bio-container {
   max-width: 800px;
   display: flex;
-  flex-direction: row;
-  gap: 10%;
-  align-items: center;
-  
-  .profileImage {
-    height: 100%;
-    img {
-      width: 250px;
+  flex-direction: column;
+
+  .bio {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    align-items: center;
+    justify-content: space-between;
+    
+    .profileImage {
+      height: 100%;
+      img {
+        width: 250px;
+      }
     }
-  }
 
-  .bioText{
-    max-width: 420px;
-    min-width: 300px;
-    text-align: justify;
-
+    .bioText{
+      max-width: 420px;
+      min-width: 300px;
+      text-align: justify;
+    }
   }
 }

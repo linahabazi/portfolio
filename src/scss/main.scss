@@ -102,6 +102,7 @@ $dark-accent: #13a38b;
 @import "bio";
 @import "hero";
 @import "sidebar";
+@import "cv";
 
 html,body {
   height: 100%;
@@ -124,4 +125,8 @@ a {
 a:hover {
   text-decoration: none;
   color: $accent;
+}
+
+p, h2, h5 {
+  color: $dark-blue-grey;
 }

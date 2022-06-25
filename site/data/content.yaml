@@ -22,6 +22,19 @@ artwork:
       image: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
       imageId: mintTea
       tags: [arabic]
+  relief:
+    seriesTitle: Relief Monoprints
+    medium: Relief
+    tags: [printmaking, relief]
+    kuffiyehscope:
+      title: Kuffiyehscope
+      year: 2021
+      dimensions: 24" x 30"
+      image: https://lh3.googleusercontent.com/l4lEaAzizsjoF4DsTxNT8n1D1FUcNvlLn_HCT_mcOBkg-qR-aqCd4xfmzK8eIC_cf8ZWmCUD9ZwfQszw1gJuqVAI8Ntnt6nCgPELSeqaVaayNLc6xln6iqPJiXZHmjgMtDu3M8Ctn8KH4yIyAcUYZdPhqSYPaUAW6hUo69vvIRbSaaOHxoYW3X8zIIO4py1173sa2v0LdwjJSx57e0F6zyep3rNUOVkCn4KvJmJvxywRNx4wg4c2O9ZTYnK9lv1iFzuBlIaRbJt4BuiKwonBetpOHkygRMDQuD9j7OhkYImW9ngnOm4I6iDbHOTmqqsMiP5V6oHViZKPgH7b9BwLAB_t4dk1qLivMzgrYhhgkOL_1pIdHgRayVJpZVItp0WurKUKtM1mqpxRsyN5_wh7tRl_IxTvi7UfsRf-6OCCL0ZB8Y3F3kXDskMVxjmqA3KebeU51nBQquAHTQxpP1vPPLdpub2LEZQDO3wHI2G7dMneJJ-4wLhJf-X9ANKzDXdl2b5GQWrWzqmjjPbQpdmCfOMRbRAbsFiesvyMMVS7L2mJ1NzUwoIvuU1Jm40USbhUeySP8nX1rbWYhXJGuarP92UUpGVHZ9fTnb-W_YG2muCIaAInEvEcaggcSC93l_CRxwmqlUmJbXa3BwlfqKNDoHD0JUwtDZjTipeU4Kgd1_BFPeqU56Vsb-ujWXmGPSCUMwwDQRpK9DmTPOIvBCOSfhfclFILggyI1RRIxKRvXjMZAn3oYhAJbZnB14TiG8nVvc8nbYu6VVnE-aSjXKlji_DmIHp1e1t8-uY=w1124-h1376-no?authuser=1
+      heroImage: "https://lh3.googleusercontent.com/KKUgJlK0krJz13atROKqS_4KxXM1vCXHtG4lTU5DViHCOzL0tlYhsLHyiwL4NLcXWo4AzFVzRSbyUZK_yUthWMkOAJF-fRkiXxQKenx-86VrWpIHEZdSWd7BF7CInFFkv-bddpfMTV2odIWATs-aw4fk2CI1pm9MmYdFn0YxPGEBm58TOeeGcSeTOXgYr95nIzLNxdoMLVOUw34bAdxxr0c1JUtSh4r-BjG-lHlvU9d_wjc4ym-0qqfNXC9-ECsmif4hMfNxlKjpDHKOkzFPyHCxfcIkKvj1buhgQehxSykmzfP5fdVAoMQxcS20Oj7J0qgXTJIM7ECuAFCfuWv24xJovnWlGu1xN8hw_Fu0B-uCWzhOmeeP9-8W1t3NsdUZRjewtQlupZB1Efq_O9PLETXZmivZkmHyR8sRRiOpNCWwTxf2iavN8KN6hYGxHvL90W7JXhzXzqgPrCFDkySgjCHFqu1lIZJerRMB5rwg-J4imgGbdTuq8MnfMcxT8sGu_boxduCgevo8F2tgreflBIdEy4L3PdRoaWacOfv5cTe2Du75niTTj_EOpeDwTxUE0xlhvBKjtZW8UPJarygXiK9033yUEhwJyYeijWkLpw6bNOtoQPwFFR_uH2YD3O39IH__Kdhw9ckH9hd-dY4qMVYZyi7sPuQCoPbJh3rjUqOLzLlrcKTWqZ4Q2XPpJpoFiNOHRwvP6J6AaRo77lzHWqsSoGSfTKI5Izdt4cXNir65D59JisOnjJPGd9QNfs87MhhgMwA2ppTOReGIgqN39jE9V3KVDDzCqC8=w1002-h1378-no?authuser=1"
+      imageId: kuffiyehscope
+      tags: [palestine]
+    iAmFree:
   asymmetry:
     seriesTitle: >
       Asymmetry: Xerographic Collages
@@ -30,19 +43,19 @@ artwork:
     failedClone:
       title: Failed Clone
       year: 2021
-      dimensions: 20" x 26"
+      dimensions: 24" x 30"
       image: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
       imageId: failedClone
     orphanChild:
       title: Orphan Child
       year: 2021
-      dimensions: 20" x 26"
+      dimensions: 24" x 30"
       image: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
       imageId: orphanChild
     opposingForces:
       title: Opposing Forces
       year: 2021
-      dimensions: 20" x 26"
+      dimensions: 24" x 30"
       image: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
       imageId: opposingForces
 ...

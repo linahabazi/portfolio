@@ -22,10 +22,10 @@ layout: 'cv'
 
 ##### PUBLICATIONS
 
-**2021** Artwork featured, Vision Magazine, Issue #3: Ramadan  
-**2020** Interview and artwork featured, While the Earth Sleeps We Travel, Ahmed Badr  
-**2020** Interview and artwork featuared, Houston Review of Books  
-**2020** Artwork featured, 25th Anniversary Song Book, Zain Bikha  
+**2021** Vision Magazine, Issue #3: Ramadan, artwork featured  
+**2020** While the Earth Sleeps We Travel, Ahmed Badr, interview and artwork featured  
+**2020** Houston Review of Books, interview and artwork featured  
+**2020** 25th Anniversary Song Book, Zain Bikha, artwork featured  
 
 ##### AWARDS
 
